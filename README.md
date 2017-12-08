@@ -23,7 +23,7 @@ Content-Type: text/plain
 Transfer-Encoding: chunked
 Connection: keep-alive
 
-{"message":"hello, openresty"}
+{"message":"hello, OpenResty"}
 ```
 
 ## Lua
