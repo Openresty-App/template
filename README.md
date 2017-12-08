@@ -9,7 +9,7 @@ Let's complete a quick hands-on exercise to install OpenResty App on your machin
 ## Run
 
 ```
-script/startup.sh
+scripts/startup.sh
 ```
 
 ## Test
