@@ -2,10 +2,6 @@
 
 Let's complete a quick hands-on exercise to install OpenResty App on your machine.
 
-## Demo
-
-* content_by_lua_file
-
 ## Depend
 
 * [OpenResty](http://openresty.org/en/installation.html)
@@ -18,7 +14,7 @@ script/startup
 
 ## Test
 
-```
+```lang=shell
 [root@localhost template]# curl -i http://127.0.0.1:8080/
 HTTP/1.1 200 OK
 Server: openresty/1.13.6.1
@@ -28,4 +24,22 @@ Transfer-Encoding: chunked
 Connection: keep-alive
 
 {"message":"hello, openresty"}
+```
+
+## Demo
+
+* content_by_lua_file
+
+## Lua
+
+```lang=lua
+-- app
+local ngx = require "ngx"
+local cjson = require "cjson.safe"
+
+
+local body = {message = "hello, openresty"}
+
+ngx.say(cjson.encode(body))
+ngx.exit(ngx.HTTP_OK)
 ```
