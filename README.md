@@ -26,10 +26,6 @@ Connection: keep-alive
 {"message":"hello, openresty"}
 ```
 
-## Demo
-
-* content_by_lua_file
-
 ## Lua
 
 ```lang=lua
