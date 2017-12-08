@@ -9,7 +9,9 @@ Let's complete a quick hands-on exercise to install OpenResty App on your machin
 ## Run
 
 ```
-scripts/startup.sh
+git clone https://github.com/Openresty-App/template.git
+cd template
+./scripts/startup.sh
 ```
 
 ## Test
