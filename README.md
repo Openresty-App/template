@@ -6,7 +6,7 @@ Let's complete a quick hands-on exercise to install OpenResty App on your machin
 
 * content_by_lua_file
 
-## Depend/Install
+## Depend
 
 * [OpenResty](http://openresty.org/en/installation.html)
 
