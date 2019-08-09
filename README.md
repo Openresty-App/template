@@ -56,3 +56,16 @@ ngx.say(cjson.encode(body))
 
 return ngx.exit(ngx.HTTP_OK)
 ```
+
+## Benchmark
+
+aliCloud ecs.g5.large(2 vCPU 8 GiB)
+
+Latency Distribution
+    50%  333.00us
+    75%  394.00us
+    90%  467.00us
+    99%  631.00us
+
+Requests/sec:  82435.11
+Transfer/sec:  16.82MB
