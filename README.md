@@ -4,7 +4,17 @@ Let's complete a quick hands-on exercise to install OpenResty App on your machin
 
 ## Depend
 
-* [OpenResty](http://openresty.org/en/installation.html)
+[OpenResty Homepage](http://openresty.org/en/installation.html)
+
+* ubuntu 
+  ```
+  wget -qO - https://openresty.org/package/pubkey.gpg | sudo apt-key add -
+  sudo apt -y install software-properties-common
+  sudo add-apt-repository -y "deb http://openresty.org/package/ubuntu $(lsb_release -sc) main"
+
+  sudo apt update
+  sudo apt install -y openresty
+  ```
 
 ## Run
 
